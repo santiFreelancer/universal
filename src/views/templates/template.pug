@@ -29,4 +29,11 @@ html(lang="es")
                     block hero
             if has_services
                 section.services
-                    block services 
+                    block services
+            if form-contact
+                section.form-contact
+                    block form-contact
+            if has_footer
+                footer.footer 
+                    block footer
+            block js

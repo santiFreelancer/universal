@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelancer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="./css/styles.css?t=1692209736874">
+    <link rel="stylesheet" href="./css/styles.css?t=1692211148148">
   </head>
   <body> 
     <header class="header">
@@ -13,6 +13,8 @@
         <div class="logo-item">
           <h1><a class="logo" href="#">Santiago Monaco</a></h1>
         </div>
+      </div>
+      <div class="nav-list"><a class="link-item" href="#">inicio</a><a class="link-item" href="#">servicios</a><a class="link-item" href="#">blog</a><a class="link-item" href="#">contactos</a>
       </div>
     </header>
     <section class="hero">
@@ -23,5 +25,47 @@
         </div>
       </div>
     </section>
+    <section class="services">
+      <div class="service">
+        <h2>Diseño Web</h2><i class="fas fa-pencil-alt"></i>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius consectetur, ducimus velit dignissimos minus.</p>
+      </div>
+      <div class="service">
+        <h2>Programacion</h2><i class="fas fa-code"></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe illo architecto reiciendis alias, in quae aperiam illum est dicta.</p>
+      </div>
+      <div class="service">
+        <h2>E-commerce</h2><i class="fas fa-shopping-bag"></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eum voluptatum error illum facere beatae.</p>
+      </div>
+    </section>
+    <section class="form-contact">
+      <fieldset>
+        <form class="form-contact" action="search.html" method="GET">
+          <div class="mail">
+            <label class="form-label" for="name">Mail</label>
+            <input id="mail" type="email" name="email" placeholder="Ingrese email">
+          </div>
+          <div class="consulta">
+            <label class="form-label" for="consulta">Consulta</label>
+            <textarea id="consulta" name="consulta" cols="40" rows="5" placeholder="Tengo una consulta sobre..."></textarea>
+          </div>
+          <button class="btn-outline btn-xl">Enviar</button>
+        </form>
+      </fieldset>
+    </section>
+    <footer class="footer"> 
+      <section class="footer-content">
+        <p class="date">2023 Freelancer</p>
+      </section>
+      <section class="footer-content">
+        <h4 class="logo-footer"></h4>
+      </section>
+      <section class="footer-content"> 
+        <div class="footer-list end-footer"><a class="link-item" href="#">inicio</a><a class="link-item" href="#">servicios</a><a class="link-item" href="#">blog</a><a class="link-item" href="#">contactos</a>
+        </div>
+      </section>
+    </footer>
+    <script src="js/app.js?t=1692211148148"></script>
   </body>
 </html>

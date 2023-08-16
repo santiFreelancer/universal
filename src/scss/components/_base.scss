@@ -7,9 +7,6 @@ body {
 }
 a {
 	text-decoration: none;
-	&:hover {
-		background-color: map-get($colors, oscuro);
-	}
 }
 img {
 	max-width: 100%;
