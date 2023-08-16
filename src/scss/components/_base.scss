@@ -1,0 +1,22 @@
+html {
+	box-sizing: border-box;
+}
+body {
+	background-color: map-get($colors, gris);
+	font-family: $fuenteprincipal;
+}
+a {
+	text-decoration: none;
+	&:hover {
+		background-color: map-get($colors, oscuro);
+	}
+}
+img {
+	max-width: 100%;
+}
+h2 {
+	font-size: 1.8rem;
+}
+h3 {
+	font-size: 1.6rem;
+}

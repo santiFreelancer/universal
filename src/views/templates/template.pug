@@ -1,0 +1,32 @@
+include ../config/config
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Freelancer
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css")
+        link(rel="stylesheet", href="./css/styles.css")
+    body 
+        if is_default
+            header.header
+                block header
+            section.hero
+                block hero
+            section.services
+                block services
+            section.form-contact
+                block form-contact
+            footer.footer 
+                block footer
+            block js
+        else 
+            if has_header 
+                header.header
+                    block header
+            if has_hero
+                section.hero
+                    block hero
+            if has_services
+                section.services
+                    block services

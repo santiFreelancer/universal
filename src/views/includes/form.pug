@@ -1,0 +1,9 @@
+fieldset
+    form.form-contact(action='search.html' method='GET')
+        .mail
+            label.form-label(for='name') Mail
+            input#mail(type='email' name='email' placeholder='Ingrese email')
+        .consulta
+            label.form-label(for='consulta') Consulta
+            textarea#consulta(name='consulta' cols='40' rows='5' placeholder='Tengo una consulta sobre...')
+        button.btn-outline.btn-xl Enviar

@@ -1,0 +1,26 @@
+fieldset{
+    border: none;
+    @include mq(md){
+        display: grid;
+        grid-template-columns: 20% 1fr 20%;
+    }
+}
+
+.form-contact{
+    @include mq(md){
+        grid-column: 2 / 3;
+    }
+}
+
+input[type=text], input[type=email], textarea {
+    border: $p-1;
+    margin: 8px 0;
+    padding: 12px 20px;
+    width: 100%;
+    box-sizing: border-box;
+
+    &:focus{
+        outline: 2px solid map-get($colors, secundario);
+    }    
+}
+

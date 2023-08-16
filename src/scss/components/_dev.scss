@@ -1,0 +1,88 @@
+
+/*$dev: false !default;
+
+$dev: true;
+
+@if dev == true {
+    *{
+        outline: 1px solid red
+    }
+} @else if 3 > 5 {
+    *{
+        display: block;
+    }
+} @else {
+    *{
+        outline: 15px solid green;
+    }
+}*/
+
+
+/*condicional import  styles.scss*/
+
+/*$buttons: true !default;
+$colors: true !default;
+
+@import "./buttons"
+@import "./colors"
+
+
+/*_buttons.scss*/
+/*@if $buttons { 
+    .btn-primary{
+        background-color: blue;
+    }
+ }*/
+
+ /*_colors.scss*/
+/*@if $colorss { 
+    .secondary{
+        color: green;
+    }
+ }*/
+
+
+ /*FOR & EACH*/
+
+/*@for $i from 5 through 20{
+    .column-#{$i * 5}{
+        width: $i * 5%;
+    }
+} */
+
+/*$colors: blue green violet;
+
+@each $color in $colors{
+    .btn-#{$color}{
+        background-color: $color;
+    }
+ }*/
+    
+
+ /*$colors: (
+    primary: blue,
+    secondary: yellow,
+    terciary: green
+ );
+
+ @each $key, $value in $colors{
+    .btn-#{$key}{
+        background-color: $value;
+    }
+ }*/
+
+ /*$breakpoint: (
+    sm: 360px,
+    md: 640px,
+    lg: 1024px,
+    xl: 1440px
+ );
+
+ @each $key, $value in $breakpoint{
+    .column-#{$key}{
+        width: $value;
+    }
+ }*/
+
+
+ 

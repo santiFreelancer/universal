@@ -1,0 +1,45 @@
+//FUENTES
+$fuenteprincipal: 'Gothic A1', 'Roboto', sans-serif;
+$fuentesecundaria: 'Osvald', sans-serif;
+
+//COLORES
+$colors : (
+    primario: #f1a94e,
+    secundario: #44b3c2,
+    negro: #000000,
+    claro: #ffffff,
+    gris: #eeeeee,
+    grisClaro: #b0b0b0d4,
+    grisOscuro: #413c3c74,
+    oscuro: #57a42b
+);
+
+//MEDIA-QUERIES
+$breakpoints: (
+    xs: 360px,
+    sm: 640px,
+    md: 820px,
+    lg: 1024px,
+    xl: 1440px
+ );
+
+ //BTN-SIZES
+ $btn-size: (
+    sm: 25%,
+    md: 50%,
+    lg: 75%,
+    xl: 100%
+ );
+
+//PADDING
+$p-1: 1rem;
+$p-2: 2rem;
+//GAP
+$g-1: 1rem;
+$g-2: 2rem;
+//MARGIN
+$m-1: 1rem;
+$m-2: 2rem;
+//FONTSIZE
+$fz-1: 1rem;
+$fz-2: 2rem;

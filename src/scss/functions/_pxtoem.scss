@@ -1,0 +1,17 @@
+@function em($px, $base: 16px){
+    @if type-of($px) == number and unit($px) == 'em'{
+        @return $px / $base *1em;
+    }
+    @return null
+};
+
+body{
+    font-size: em(20px);
+}
+
+
+$path : '../img/'; /* VAriable global*/
+
+@function img($image){
+    @return url($path + $image)
+}

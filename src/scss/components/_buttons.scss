@@ -1,0 +1,41 @@
+%button {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+
+.btn {
+    @extend %button;
+    background-color: map-get($colors, oscuro);
+    border: none;
+    border-radius: 2px;
+    color: map-get($colors, claro);
+    font-size: 16px;
+    padding: 15px 32px;
+
+    &:hover{
+        background-color: map-get($colors, claro);
+        color: map-get($colors, oscuro);
+    }
+
+    &-outline{
+        background-color: map-get($colors, claro);
+        border: 2px solid #4CAF50;
+        border-radius: 2px;
+        color: map-get($colors, negro);
+        padding: $p-1;
+    }
+
+    &-outline:hover{
+        background-color: map-get($colors, oscuro);
+        color: map-get($colors, claro);
+    }
+}
+
+@each $key, $value in $btn-size {
+    .btn-#{$key}{
+        width: $value;
+    }
+}
+

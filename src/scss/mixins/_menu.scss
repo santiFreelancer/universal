@@ -1,0 +1,46 @@
+/*@mixin menu($selector-item, $selector-link: 'link-item'){
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+
+    #{$selector-item} {
+        display: block;
+    }
+
+    #{$selector-lonk} {
+        display: block;
+        text-decoration: none;
+    }
+}*/
+
+/*styles.scss*/
+
+/*@import 'mixins/mixins';
+
+.menu{
+    @include menu('nav-item', 'nav-link')
+}*/
+
+@mixin menu($colors...){
+
+}
+
+@mixin main($font-size){
+    background-color: yellow;
+    font-size: $font-size;
+    .link{
+        @content
+    };
+
+    @media screen and (min-width: 1024px) {
+        @content
+    }
+};
+
+.main{
+    @include main(2em) {
+        color: green
+    }
+
+};

@@ -1,0 +1,114 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap";
+@import './components/variables';
+@import './mixins/mq';
+@import './components/base';
+@import './components/form';
+@import './components/buttons';
+@import './components/footer';
+
+
+/*-------------------------*/
+/*---------  NAV   -------*/
+/*-------------------------*/
+
+.container {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+}
+.header {
+	margin-top: $m-2;
+}
+.logo {
+	color: map-get($colors, negro);
+	font-weight: 500;
+}
+
+.logo-item{
+	text-align: center;
+}
+
+.menu {
+	display: none;
+}
+.nav-bar {
+	display: grid;
+	grid-template-rows: repeat(2, auto);
+	grid-row-gap: $g-1;
+}
+.nav-list {
+	padding: $p-1;
+	background-color: map-get($colors, primario);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+}
+.link-item {
+	color: map-get($colors, negro);
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+/*-------------------------*/
+/*-------   HERO  ---------*/
+/*-------------------------*/
+
+
+
+.hero {
+	background: url(../img/fondo.jpg) 40% no-repeat;
+	background-size: cover;
+	height: 30vh;
+	.content {
+		text-align: center;
+		color: map-get($colors, claro);
+	}
+}
+.content {
+	.title {
+		margin: 0;
+		padding-top: $p-2;
+	}
+	.subtitle {
+		font-size: $fz-1;
+	}
+}
+
+/*---------------------------*/
+/*------    SERVICES    -----*/
+/*---------------------------*/
+
+.services {
+	display: grid;
+	grid: repeat(3, 1fr) / 10% 1fr 10%;
+}
+.service {
+	text-align: center;
+	grid-column: 2 / 3;
+	h2 {
+		padding-bottom: .5rem;
+		&::after {
+			height: .5rem;
+			width: 7rem;
+			background-color: map-get($colors, primario);
+			content: '';
+			display: block;
+			margin: $m-1 auto 0 auto;
+		}
+	}
+}
+.fas {
+	color: map-get($colors, secundario);
+	font-size: $fz-2;
+}
+
+/*---------------------------*/
+/*-------    CONTACT   ------*/
+/*---------------------------*/
+
+.form-contact {
+	padding-top: $p-2;
+}
+.form-label {
+	display: block;
+	font-size: 1.2rem;
+}

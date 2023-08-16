@@ -1,0 +1,26 @@
+extends ../templates/template
+include ../mixins/link
+include ../mixins/services
+
+block header
+    .nav-bar.container
+        .logo-item
+            h1
+                a.logo(href="#")= author
+    .nav-list
+        each name in navContent
+            +link('#', `${name}`)
+    
+    include ../includes/menu
+block hero
+    include ../includes/hero
+block services
+    each s in services 
+        +service(s)
+block form-contact
+    include ../includes/form
+block footer 
+    include ../includes/footer
+append js
+    script(src='js/app.js')
+
