@@ -3,15 +3,17 @@ include ../mixins/link
 include ../mixins/services
 
 block header
-    .nav-bar.container
-        .logo-item
-            h1
-                a.logo(href="#")= author
-    .nav-list
-        each name in navContent
-            +link('#', `${name}`)
-    
-    include ../includes/menu
+    if has_logo
+        .nav-bar.container
+            .logo-item
+                h1
+                    a.logo(href="#")= author
+    if has_menu
+        .nav-list
+            each name in navContent
+                +link('#', `${name}`)
+    if has_mobile_menu
+        include ../includes/menu
 block hero
     include ../includes/hero
 block services
