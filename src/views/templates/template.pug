@@ -23,17 +23,23 @@ html(lang="es")
         else 
             if has_header 
                 header.header
-                    block header
-            if has_hero
-                section.hero
-                    block hero
-            if has_services
+                    block header 
+            if has_carrousel 
+                section.carrousel
+                    block carrousel
+            else 
+                section.carrousel
+                    block carrousel
+            if has_services 
                 section.services
                     block services
+            if has_hero 
+                section.hero
+                    block hero
             if form-contact
                 section.form-contact
                     block form-contact
-            if has_footer
+            if has_footer 
                 footer.footer 
                     block footer
             block js

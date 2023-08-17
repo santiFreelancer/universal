@@ -66,7 +66,7 @@
 	align-items: center;
 	transition: transform 0.5s;
 	transform: translateX(-100%);
-	z-index:20;
+	z-index:9;
 	@include mq(md){
 		position: relative;
 		height: 20%;
@@ -102,7 +102,7 @@
 
 
 
-.hero {
+.carrousel {
 	background: url(../img/fondo.jpg) 40% no-repeat;
 	background-size: cover;
 	height: 30vh;
@@ -132,10 +132,11 @@
 /*---------------------------*/
 
 .services {
+	padding: $p-1;
 	display: grid;
 	grid: repeat(3, 1fr) / 10% 1fr 10%;
 	@include mq(md){
-		padding: $p-1;
+		padding: $p-2;
 		grid: 1fr / repeat(3, 1fr);
 	}
 	

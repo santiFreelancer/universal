@@ -1,6 +1,7 @@
 extends ../templates/template
 include ../mixins/link
 include ../mixins/services
+include ../mixins/articles
 
 block header
     if has_logo
@@ -19,11 +20,18 @@ block header
     else
         include ../includes/nav
         
-block hero
-    include ../includes/hero
+block carrousel
+    if has_carrousel
+        include ../components/carrousel
+    else
+        include ../components/picture
 block services
     each s in services
         +service(s)
+    each a in articles
+        +article(a)
+block hero
+    include ../includes/hero
 block form-contact
     include ../includes/form
 block footer

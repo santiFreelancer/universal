@@ -1,0 +1,5 @@
+mixin article(articles)
+    .service(class=`${articles.article.toLowerCase()}`)
+        h2= articles.article 
+        p= articles.text
+        img(src=`./img/${articles.img}`)
