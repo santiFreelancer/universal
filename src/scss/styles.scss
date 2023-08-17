@@ -26,10 +26,13 @@
 
 .logo-item{
 	text-align: center;
+	img{
+		width: 100px;
+	}
 }
 
 .menu {
-	display: none;
+	display: flex;
 }
 .nav-bar {
 	display: grid;

@@ -181,9 +181,12 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 .logo-item {
   text-align: center;
 }
+.logo-item img {
+  width: 100px;
+}
 
 .menu {
-  display: none;
+  display: flex;
 }
 
 .nav-bar {

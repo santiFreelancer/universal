@@ -1,36 +1,52 @@
-- const author = 'Santiago Monaco';
-- const navContent = ['inicio', 'servicios', 'blog', 'contactos'];
 
-- const services = [{service: 'Diseño Web', icon: 'pencil-alt', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius consectetur, ducimus velit dignissimos minus.'}, {service: 'Programacion', icon: 'code', text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe illo architecto reiciendis alias, in quae aperiam illum est dicta.'},{service: 'E-commerce', icon: 'shopping-bag', text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eum voluptatum error illum facere beatae.'}];
 
 
 //- Si default esta en true, genera una page automatica
-- let is_default = true;
+- let is_default = false;
 
 
 
 //- HEADER CONFIG
 - let has_header = true;
 
-//- Preguntar si lleva logo
+//- Preguntar si lleva logo, si es false lleva un nombre
 - let has_logo = true;
+- let patch = './img';
+- let enlace = '1.jpg';
+//- let logo_img = img(src=`${patch}/${enlace}`, alt="");
+
+- const logo_title = 'Santiago Monaco';
 
 //- Preguntar si lleva menu (mobile)
-- let has_menu = true;
-- let has_mobile_menu = false;
+- let has_mobile_menu = true;
+- const navContent = ['inicio', 'servicios', 'blog', 'contactos'];
 
+//- Preguntar si lleva algun boton en mobile version
+- let has_button = false;
+- const number_buttons = 1;
+- const list_buttons = ['Regalo'];
 
 //- SLIDER CONFIG
+//- Si es es false por defecto lleva una foto
 - let has_slider = false;
-
-
+- const title_picture = 'Diseño y Desarrollo Web';
+- const subtitle_picture = 'Diseño, Programacion e E-Commerce';
 
 
 //- HERO CONFIG
 - let has_hero = true;
+- const number_heros = 5;
 //- Preguntar que tipo de info se va a utilizar
 - let has_services = false;
-
+- const services = [{service: 'Diseño Web', icon: 'pencil-alt', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius consectetur, ducimus velit dignissimos minus.'}, {service: 'Programacion', icon: 'code', text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe illo architecto reiciendis alias, in quae aperiam illum est dicta.'},{service: 'E-commerce', icon: 'shopping-bag', text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eum voluptatum error illum facere beatae.'}];
+- let has_articles = false;
+- const articles = [{service: 'Diseño Web', icon: 'pencil-alt', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius consectetur, ducimus velit dignissimos minus.'}, {service: 'Programacion', icon: 'code', text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe illo architecto reiciendis alias, in quae aperiam illum est dicta.'},{service: 'E-commerce', icon: 'shopping-bag', text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eum voluptatum error illum facere beatae.'}];
+- let has_marketing = false;
+- const marketing = [{service: 'Diseño Web', icon: 'pencil-alt', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius consectetur, ducimus velit dignissimos minus.'}, {service: 'Programacion', icon: 'code', text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe illo architecto reiciendis alias, in quae aperiam illum est dicta.'},{service: 'E-commerce', icon: 'shopping-bag', text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eum voluptatum error illum facere beatae.'}];
+- let has_sellers = false;
+- const sellers = [{service: 'Diseño Web', icon: 'pencil-alt', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius consectetur, ducimus velit dignissimos minus.'}, {service: 'Programacion', icon: 'code', text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe illo architecto reiciendis alias, in quae aperiam illum est dicta.'},{service: 'E-commerce', icon: 'shopping-bag', text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eum voluptatum error illum facere beatae.'}];
+- let has_content = false;
+- const content = [{service: 'Diseño Web', icon: 'pencil-alt', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius consectetur, ducimus velit dignissimos minus.'}, {service: 'Programacion', icon: 'code', text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe illo architecto reiciendis alias, in quae aperiam illum est dicta.'},{service: 'E-commerce', icon: 'shopping-bag', text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eum voluptatum error illum facere beatae.'}];
 //- CONTACT CONFIG
 - let has_contact = false;
 

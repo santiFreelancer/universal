@@ -6,22 +6,30 @@ block header
     if has_logo
         .nav-bar.container
             .logo-item
+                img(src=`${patch}/${enlace}`, alt="")
+    else
+        .nav-bar.container
+            .logo-item
                 h1
-                    a.logo(href="#")= author
-    if has_menu
+                    a.logo(href="#")= logo_title
+    if has_mobile_menu
+        include ../includes/menu
         .nav-list
             each name in navContent
                 +link('#', `${name}`)
-    if has_mobile_menu
-        include ../includes/menu
+    else
+        .nav-list
+            each name in navContent
+                +link('#', `${name}`)
+        
 block hero
     include ../includes/hero
 block services
-    each s in services 
+    each s in services
         +service(s)
 block form-contact
     include ../includes/form
-block footer 
+block footer
     include ../includes/footer
 append js
     script(src='js/app.js')
