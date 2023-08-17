@@ -5,23 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelancer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="./css/styles.css?t=1692288958219">
+    <link rel="stylesheet" href="./css/styles.css?t=1692305444039">
   </head>
   <body> 
     <header class="header">
       <div class="nav-bar container">
-        <div class="logo-item"><img src="./img/1.jpg" alt=""></div>
+        <div class="logo-item">
+          <h1><a class="logo" href="#">Santiago Monaco</a></h1>
+        </div>
       </div>
-      <div class="menu">
-        <svg width="64px" height="64px" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-          <g id="SVGRepo_iconCarrier"></g>
-          <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-      </div>
-      <div class="nav-list"><a class="link-item" href="#">inicio</a><a class="link-item" href="#">servicios</a><a class="link-item" href="#">blog</a><a class="link-item" href="#">contactos</a>
-      </div>
+      <nav class="main-nav"> 
+        <div class="toggle-menu" id="toggle-menu">
+          <svg width="64px" height="64px" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier"></g>
+            <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <ul class="main-menu" id="main-menu">
+          <li class="main-menu__item"><a class="main-menu__link" href="#">inicio</a>
+          </li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">servicios</a>
+          </li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">blog</a>
+          </li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">contactos</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <section class="hero">
       <div class="container">
@@ -31,6 +43,20 @@
         </div>
       </div>
     </section>
-    <script src="js/app.js?t=1692288958219"></script>
+    <section class="services">
+      <div class="service diseño web">
+        <h2>Diseño Web</h2><i class="fas fa-pencil-alt"></i>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius consectetur, ducimus velit dignissimos minus.</p>
+      </div>
+      <div class="service programacion">
+        <h2>Programacion</h2><i class="fas fa-code"></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe illo architecto reiciendis alias, in quae aperiam illum est dicta.</p>
+      </div>
+      <div class="service e-commerce">
+        <h2>E-commerce</h2><i class="fas fa-shopping-bag"></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eum voluptatum error illum facere beatae.</p>
+      </div>
+    </section>
+    <script src="./js/app.min.js?t=1692305444039"></script>
   </body>
 </html>

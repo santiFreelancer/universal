@@ -1,5 +1,5 @@
 mixin service(services)
-    .service
+    .service(class=`${services.service.toLowerCase()}`)
         h2= services.service 
         i(class=`fas fa-${services.icon}`)
         p= services.text

@@ -1,0 +1,4 @@
+ul.main-menu#main-menu
+    each name in navContent
+        li.main-menu__item
+            +link('#', `${name}`)

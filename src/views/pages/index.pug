@@ -13,14 +13,11 @@ block header
                 h1
                     a.logo(href="#")= logo_title
     if has_mobile_menu
-        include ../includes/menu
-        .nav-list
-            each name in navContent
-                +link('#', `${name}`)
+        nav.main-nav 
+            include ../includes/menu
+            include ../includes/nav
     else
-        .nav-list
-            each name in navContent
-                +link('#', `${name}`)
+        include ../includes/nav
         
 block hero
     include ../includes/hero
@@ -32,5 +29,5 @@ block form-contact
 block footer
     include ../includes/footer
 append js
-    script(src='js/app.js')
+    script(src='./js/app.min.js')
 
