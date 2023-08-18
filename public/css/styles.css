@@ -295,7 +295,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 }
 
 .service {
-  padding: 3.5rem 2rem;
+  padding: 3.5rem 1.5rem;
   text-align: center;
 }
 .service h2 {
