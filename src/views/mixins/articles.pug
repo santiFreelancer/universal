@@ -1,5 +1,7 @@
 mixin article(articles)
-    .service(class=`${articles.article.toLowerCase()}`)
-        h2= articles.article 
-        p= articles.text
-        img(src=`./img/${articles.img}`)
+    .article(class=`${articles.article.toLowerCase()}`)
+        .info
+            h2= articles.article 
+            p= articles.text 
+        .image
+            img(src=`./img/${articles.img}`, alt=`${articles.article}`)
