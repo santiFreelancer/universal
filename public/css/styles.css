@@ -367,7 +367,15 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   }
 }
 .article .info {
-  padding: 10rem 2rem;
+  padding: 3rem 2rem;
+}
+.article .info h2 {
+  font-size: 1.2rem;
+}
+.article .info p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .article .image {
   overflow: hidden;

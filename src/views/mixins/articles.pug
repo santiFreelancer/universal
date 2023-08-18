@@ -1,7 +1,8 @@
 mixin article(articles)
-    .article(class=`${articles.article.toLowerCase()}`)
+    .article
         .info
             h2= articles.article 
             p= articles.text 
         .image
-            img(src=`./img/${articles.img}`, alt=`${articles.article}`)
+
+            img(src=`${articles.img}`, alt=`${articles.article}`)

@@ -200,6 +200,7 @@
 	grid-column: 1 / 4;
 	
 	margin-bottom: 4rem;
+	
 
 	@include mq(md){
 		display: grid;
@@ -207,7 +208,15 @@
 	}
 
 	.info{
-		padding: 10rem 2rem;
+		padding: 3rem 2rem;
+		h2{
+			font-size: 1.2rem;
+		}
+		p{
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+		}
 	}
 
 	.image{
