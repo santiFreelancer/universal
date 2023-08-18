@@ -256,7 +256,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 .carrousel {
   background: url(../img/fondo.jpg) 40% no-repeat;
   background-size: cover;
-  height: 30vh;
+  height: 65vh;
   margin-top: 5rem;
 }
 @media screen and (min-width: 768px) {
@@ -295,6 +295,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 }
 
 .service {
+  padding: 3.5rem 2rem;
   text-align: center;
 }
 .service h2 {
