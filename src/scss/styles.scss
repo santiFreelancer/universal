@@ -136,7 +136,7 @@
 	display: grid;
 	grid: repeat(3, 1fr) / 10% 1fr 10%;
 	@include mq(md){
-		padding: $p-2;
+		padding: 4rem;
 		grid: 1fr / repeat(3, 1fr);
 	}
 	
@@ -197,9 +197,8 @@
 	background-color: map-get($colors, claro);
 	text-align: center;
 	grid-column: 1 / 4;
-	display: grid;
-	grid: auto / 20% 1fr 20%;
-	margin-bottom: 1rem;
+	
+	margin-bottom: 4rem;
 
 	@include mq(md){
 		display: grid;
@@ -208,22 +207,18 @@
 
 	.info{
 		padding: 10rem 2rem;
-		grid-column: 2 / 3;
 	}
 
 	.image{
 		overflow: hidden;
-		grid-column: 2 / 3;
 	}
 
 	@include mq(md){
 		.info{
-			//grid-row: 1 / 3;
 			grid-column: 1 / 3;
 		}
 		.image{
 			overflow: hidden;
-			//grid-row: 1 / 3;
 			grid-column: 3 / 5;
 		}
 	}
