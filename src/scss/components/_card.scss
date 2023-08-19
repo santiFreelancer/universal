@@ -1,0 +1,49 @@
+.cards {
+    display: grid;
+    //grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+
+    @include mq(sm) {
+        display: grid;
+        grid-template-rows: minmax(230px, 1fr);
+    }
+}
+
+.card {
+    background-color: map-get($colors, primario);
+    display: grid;
+    //grid-template-rows: max-content 200px 1fr;
+    padding: $p-2;
+
+    @include mq(sm) {
+        display: grid;
+        grid-template-rows: max-content;
+        padding: $p-1;
+    }
+}
+
+@include mq(sm) {
+    .horizontal {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+
+    }
+}
+
+
+.card .image {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    @include mq(sm) {
+        object-fit: contain;
+    }
+}
+
+@include mq(sm) {
+    .info{
+        padding: 4rem 3rem;
+    }
+}

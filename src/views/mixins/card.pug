@@ -1,0 +1,16 @@
+mixin card(data)
+    article.card.horizontal
+        if (Object.keys(data).map(x=>x%2) == 1)
+            .image
+                img(src=`${data.img}`, alt=`${data.article}`)
+            header.info
+                h2= data.article 
+                p= data.text 
+        else
+            header.info
+                h2= data.article 
+                p= data.text
+            .image
+                img(src=`${data.img}`, alt=`${data.article}`)
+        
+        
