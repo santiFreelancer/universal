@@ -21,14 +21,14 @@
 
     &-outline{
         background-color: map-get($colors, claro);
-        border: 2px solid #4CAF50;
+        border: 2px solid map-get($colors, secundario);
         border-radius: 2px;
         color: map-get($colors, negro);
         padding: $p-1;
     }
 
     &-outline:hover{
-        background-color: map-get($colors, oscuro);
+        background-color: map-get($colors, secundario);
         color: map-get($colors, claro);
     }
 }

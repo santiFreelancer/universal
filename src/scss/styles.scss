@@ -22,6 +22,9 @@
 .logo {
 	color: map-get($colors, negro);
 	font-weight: 500;
+	&:hover{
+		color: map-get($colors, secundario);
+	}
 }
 
 .logo-item{
@@ -95,6 +98,10 @@
 	text-transform: uppercase;
 	font-size: 1.2rem;
 	text-align: center;
+
+	&:hover{
+		color: map-get($colors, claro);
+	}
 }
 
 /*-------------------------*/

@@ -93,13 +93,13 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 }
 .btn-outline {
   background-color: #ffffff;
-  border: 2px solid #4CAF50;
+  border: 2px solid #44b3c2;
   border-radius: 2px;
   color: #000000;
   padding: 1rem;
 }
 .btn-outline:hover {
-  background-color: #57a42b;
+  background-color: #44b3c2;
   color: #ffffff;
 }
 
@@ -123,7 +123,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   display: grid;
   grid-gap: 20px;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .cards {
     display: grid;
     grid-template-rows: minmax(230px, 1fr);
@@ -135,7 +135,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   display: grid;
   padding: 2rem;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .card {
     display: grid;
     grid-template-rows: max-content;
@@ -143,7 +143,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   }
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .horizontal {
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
@@ -155,13 +155,13 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   width: 100%;
   height: 100%;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .card .image {
     object-fit: contain;
   }
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .info {
     padding: 4rem 3rem;
   }
@@ -207,6 +207,9 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 .footer-content .footer-list a {
   color: rgba(65, 60, 60, 0.4549019608);
 }
+.footer-content .footer-list a:hover {
+  color: #44b3c2;
+}
 
 /*-------------------------*/
 /*---------  NAV   -------*/
@@ -219,6 +222,9 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 .logo {
   color: #000000;
   font-weight: 500;
+}
+.logo:hover {
+  color: #44b3c2;
 }
 
 .logo-item {
@@ -295,6 +301,9 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   text-transform: uppercase;
   font-size: 1.2rem;
   text-align: center;
+}
+.main-menu__link:hover {
+  color: #ffffff;
 }
 
 /*-------------------------*/

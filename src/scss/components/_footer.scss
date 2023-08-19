@@ -38,6 +38,10 @@
 
         a{
             color: map-get($colors, grisOscuro);
+
+            &:hover{
+                color: map-get($colors, secundario);
+            }
         }
     }
 }
