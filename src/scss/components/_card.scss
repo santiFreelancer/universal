@@ -1,8 +1,8 @@
 .cards {
     background-color: map-get($colors, primario);
     display: grid;
-    //grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    grid-gap: 20px;
+    //grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    grid-gap: 10px;
 
     @include mq(md) {
         display: grid;
@@ -12,13 +12,13 @@
 
 .card {
     display: grid;
-    grid-template-rows: max-content 200px 1fr;
-    padding: $p-2;
+    //grid-template-rows: max-content 200px 1fr;
+    padding: $p-1;
 
     @include mq(md) {
         display: grid;
         grid-template-rows: max-content;
-        padding: $p-1;
+        padding: $p-2;
     }
 }
 

@@ -32,13 +32,13 @@ block services
         +service(s)
 block articles
     each article in articles
-        - let obj = Object.keys(article).map(x=>x%2);
-        - let arr = Object.entries(obj);
-        - arr.forEach(value => value[1] % 2 == 0 ?
+        - let obj = Object.keys(articles).map(x=>x%2);
+        - let info = obj.map(value => value == 0);
+        -  info.forEach(data => data ?
             +card(article)
         - :
             +cardReverse(article)
-        - );
+        - )
 block hero
     include ../includes/hero
 block formContact 
