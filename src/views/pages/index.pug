@@ -3,6 +3,7 @@ include ../mixins/link
 include ../mixins/services
 include ../mixins/articles
 include ../mixins/card
+include ../mixins/cardReverse
 
 block header
     if has_logo
@@ -20,7 +21,7 @@ block header
             include ../includes/nav
     else
         include ../includes/nav
-        
+
 block carrousel
     if has_carrousel
         include ../components/carrousel
@@ -30,8 +31,14 @@ block services
     each s in services
         +service(s)
 block articles
-    each a in articles
-        +card(a)
+    each article in articles
+        - let obj = Object.keys(article).map(x=>x%2);
+        - let arr = Object.entries(obj);
+        - arr.forEach(value => value[1] % 2 == 0 ?
+            +card(article)
+        - :
+            +cardReverse(article)
+        - );
 block hero
     include ../includes/hero
 block formContact 

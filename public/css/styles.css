@@ -120,6 +120,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 }
 
 .cards {
+  background-color: #f1a94e;
   display: grid;
   grid-gap: 20px;
 }
@@ -131,8 +132,8 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 }
 
 .card {
-  background-color: #f1a94e;
   display: grid;
+  grid-template-rows: max-content 200px 1fr;
   padding: 2rem;
 }
 @media screen and (min-width: 768px) {

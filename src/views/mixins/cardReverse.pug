@@ -1,0 +1,7 @@
+mixin cardReverse(data)
+    article.card.horizontal
+        header.info
+            h2= data.article
+            p= data.text
+        .image
+            img(src=`${data.img}`, alt=`${data.article}`)
